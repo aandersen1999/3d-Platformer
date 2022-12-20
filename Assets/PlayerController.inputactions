@@ -1,0 +1,134 @@
+{
+    "name": "PlayerController",
+    "maps": [
+        {
+            "name": "GamePlayer",
+            "id": "b91c5081-b746-4290-ade3-3b8f4052aeff",
+            "actions": [
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "f684adcf-655e-4b6c-8afb-05f14473ab6a",
+                    "expectedControlType": "Stick",
+                    "processors": "StickDeadzone",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "08954685-8118-437d-9103-b00405240078",
+                    "expectedControlType": "Stick",
+                    "processors": "StickDeadzone(min=0.2)",
+                    "interactions": "AnalogStickRotation,Press",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "4889e4e9-260e-4679-8556-4a2e0362da09",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "1333b1a2-f13a-42fa-825f-60dfeb7cb24c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CenterCam",
+                    "type": "Button",
+                    "id": "60c35fa1-2b20-4831-9f5e-603404683439",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Crouch",
+                    "type": "Button",
+                    "id": "bc201bd2-823b-48d4-91ab-777e87861797",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "526cbb75-6069-4518-8667-e746ed4077dc",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "726499ba-bb58-4eac-8207-9f25bcd6df57",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1ad4bdf-8a32-49ed-aa16-9a26a705431c",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8e0ea7b3-ce87-47ea-a237-2ab733659409",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bdac2dc6-b7f0-4f81-a450-61811f27f6e0",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CenterCam",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "745c0b7d-1a0f-4e8d-bbc8-513c7357cab0",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
